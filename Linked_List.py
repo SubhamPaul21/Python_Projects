@@ -22,7 +22,7 @@ class LinkedList(object):
             newNode.nextNode = self.head
             self.head = newNode
     # Get the size of the list    
-    def size(self):
+    def size1(self):
             return self.size
     # Insert data at the end of list
     def insertEnd(self,data):
