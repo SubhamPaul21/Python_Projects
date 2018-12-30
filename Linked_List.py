@@ -52,7 +52,7 @@ class LinkedList(object):
             self.head = currentNode.nextNode
         else:
             previousNode.nextNode = currentNode.nextNode
-    
+    # traverse through list and display the output
     def traverseList(self):
         actualNode = self.head
 
