@@ -2,8 +2,11 @@
 # input will come from buttons and an input field
 # all output for the game will be printed in the console
 
+# install simplegui on windows as follows first ---
+ `pip install SimpleGUITk`
 
-import simplegui
+
+import simpleguitk as simplegui
 import random
 secret_number = 0
 count = 1
