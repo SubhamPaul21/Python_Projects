@@ -21,8 +21,8 @@ def new_game(start_r,end_r,max_chanc):
     global max_chance
     max_chance = max_chanc
     secret_number = random.randrange(start_r,end_r)
-    print "Let the game begin.... Range is [",start_r,",",end_r,")"
-    print 'You have',max_chance,' chances left' 
+    print ("Let the game begin.... Range is [",start_r,",",end_r,")")
+    print ('You have',max_chance,' chances left') 
 
 # define event handlers for control panel
 def range100():
@@ -44,26 +44,26 @@ def range1000():
 def input_guess(guess):
     # main game logic goes here	
     number = int(guess)
-    print 'Guess was', number
+    print ('Guess was', number)
     global count 
     count += 1
     if count < max_chance:
         if number != secret_number:
             left = max_chance - count
-            print left,'chances left'
+            print (left,'chances left')
             if number > secret_number:
-                print 'Lower'
+                print ('LOWER')
             elif number < secret_number:
-                print 'Higher'
+                print ('HIGHER')
             
         else:
-            print 'Correct'
+            print ('Correct')
             print('Hurray You guessed right and finished before chances end')
             if max_chance == 7:range100()
             else:range1000()
     else:
         print("You ran out of chances")
-        print 'The correct number was',secret_number
+        print ('The correct number was',secret_number)
         if max_chance == 7:
             range100()
         else:
@@ -81,4 +81,5 @@ frame.add_input('Enter your guess',input_guess,100)
 # call new_game 
 new_game(0,100,7)
 frame.start()
+
 
