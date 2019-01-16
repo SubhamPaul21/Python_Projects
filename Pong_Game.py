@@ -133,8 +133,8 @@ frame.set_keyup_handler(keyup)
 frame.add_button('Restart', new_game, 100)
 frame.add_label(" ")
 frame.add_label(" ")
-frame.add_label("W / S to move left paddle", 200)
-frame.add_label('Up / Down to move right paddle', 300)
+frame.add_label("W / S to move left paddle")
+frame.add_label('Up / Down to move right paddle')
 
 
 # start frame
