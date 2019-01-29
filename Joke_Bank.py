@@ -1,3 +1,4 @@
+# This is a Joke Scraper which uses an API to provide you jokes based on your requirement or choice... Enjoy and Have a laugh :D :D 
 import requests
 import pyfiglet
 import termcolor
